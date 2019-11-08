@@ -12,6 +12,8 @@ app.secret_key = app.config['SECRET_KEY']
 
 db_filename = "updater.db"
 
+html_footer="<h3>Simple LineageOS Updater Server.<br/>Source <a href='https://github.com/invisiblek/simple_lineage_updater'>here</a>"
+
 @app.route('/static/<path:path>')
 def send_static(path):
   return send_from_directory('static', path)
@@ -52,20 +54,27 @@ def root():
   h = "<html><ul>"
   for d in devices:
     h = h + "<li><a href='/" + d[0] + "'>" + d[0] + "</a></li>"
-  h = h + "</ul></html>"
+  h = h + "</ul>"
+  h = h + html_footer
+  h = h + "</html>"
   return h
 
 @app.route('/<string:device>')
 def device(device):
   conn = sqlite3.connect(db_filename)
   c = conn.cursor()
-  c.execute("SELECT filename, url from rom where device = '" + device + "' order by filename;")
+  c.execute("SELECT r.filename, r.url, d.name, d.oem, d.model from rom r inner join device d on r.device = d.model where r.device = '" + device + "' order by r.filename;")
   roms = c.fetchall()
   conn.commit()
   conn.close()
 
-  h = "<html><ul>"
+  h = "<html>"
+  if len(roms) > 0:
+    h = h + "<h1>" + roms[0][3] + " " + roms[0][2] + " (" + roms[0][4] + ")</h1>"
+  h = h + "<ul>"
   for r in roms:
     h = h + "<li><a href='" + r[1] + "'>" + r[0] + "</a></li>"
-  h = h + "</ul></html>"
+  h = h + "</ul>"
+  h = h + html_footer
+  h = h + "</html>"
   return h
