@@ -46,14 +46,14 @@ def index(device, romtype, incrementalversion):
 def root():
   conn = sqlite3.connect(db_filename)
   c = conn.cursor()
-  c.execute("SELECT DISTINCT device from rom order by device;")
+  c.execute("SELECT DISTINCT r.device, d.oem, d.name from rom r inner join device d on r.device = d.model order by r.device;")
   devices = c.fetchall()
   conn.commit()
   conn.close()
 
   h = "<html><ul>"
   for d in devices:
-    h = h + "<li><a href='/" + d[0] + "'>" + d[0] + "</a></li>"
+    h = h + "<li><a href='/" + d[0] + "'>" + d[0] + "</a> - " + d[1] + " " + d[2] + "</li>"
   h = h + "</ul>"
   h = h + html_footer
   h = h + "</html>"
