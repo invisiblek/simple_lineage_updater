@@ -1,0 +1,477 @@
+Desire 816 Dual SIM|a5dwg|HTC
+Iconia Tab A700|a700|Acer
+Nook Tablet|acclaim|Barnes & Noble
+Desire HD / Inspire 4G|ace|HTC
+Xperia Z1 Compact|amami|Sony
+Nexus 6P|angler|Google
+Xperia Arc / Arc S|anzu|Sony Ericsson
+Xperia Ion|aoba|Sony
+Galaxy S Relay 4G|apexqtmo|Samsung
+Kindle Fire HDX 8.9 (3rd gen)|apollo|Amazon
+Mi 2|aries|Xiaomi
+Redmi 1S|armani|Xiaomi
+Moto G4/G4 Plus|athene|Motorola
+One|bacon|OnePlus
+Blade|blade|ZTE
+Desire (GSM)|bravo|HTC
+Desire (CDMA)|bravoc|HTC
+Nexus 5X|bullhead|Google
+Wildfire|buzz|HTC
+Optimus Pro|c660|LG
+myTouch Q|c800|LG
+Mi 3w and Mi 4|cancro|Xiaomi
+Captivate|captivatemtd|Samsung
+Xperia Z2 Tablet (LTE)|castor|Sony
+Xperia Z2 Tablet (Wi-Fi)|castor_windy|Sony
+Galaxy Tab S 10.5 (Wi-Fi)|chagallwifi|Samsung
+Honor 4x (China Telecom)|che10|Huawei
+Honor 4/4x|cherry|Huawei
+Moto X Pure (2015)|clark|Motorola
+Tattoo|click|HTC
+Live with Walkman|coconut|Sony Ericsson
+Moto E|condor|Motorola
+Galaxy Ace|cooper|Samsung
+Swift|crackling|Wileyfox
+Nexus S|crespo|Google
+Nexus S 4G|crespo4g|Google
+Galaxy S III (AT&T)|d2att|Samsung
+Galaxy S III (Cricket)|d2cri|Samsung
+Galaxy S III (US)|d2lte|Samsung
+Galaxy S III (MetroPCS)|d2mtr|Samsung
+Galaxy S III (Sprint)|d2spr|Samsung
+Galaxy S III (TMO)|d2tmo|Samsung
+Galaxy S III (USC)|d2usc|Samsung
+Galaxy S III (VZW)|d2vzw|Samsung
+Galaxy S II Epic Touch|d710|Samsung
+G2 (AT&T)|d800|LG
+G2 (TMO)|d801|LG
+G2 (Intl)|d802|LG
+G2 (Canada)|d803|LG
+G3 (AT&T)|d850|LG
+G3 (TMO)|d851|LG
+G3 (Canada)|d852|LG
+G3 (Unlocked)|d855|LG
+Nexus 7 2013 (4G)|deb|Google
+Droid Eris|desirec|HTC
+Droid DNA|dlx|HTC
+Xperia ZR|dogo|Sony
+myTouch 4G Slide|doubleshot|T-Mobile
+Dream / Magic|dream_sapphire|HTC
+Droid 2|droid2|Motorola
+Droid 2 Global|droid2we|Motorola
+Optimus L3|e400|LG
+Optimus Hub|e510|LG
+Optimus L5|e610|LG
+Desire 816|a5|HTC
+Optimus Chic|e720|LG
+Optimus Sol|e730|LG
+myTouch|e739|LG
+Optimus G (AT&T)|e970|LG
+Optimus G (Canada)|e973|LG
+Optimus G (Intl)|e975|LG
+Optimus G Pro (All e98x)|e980|LG
+Optimus G Pro (deprecated)|e986|LG
+Nook Color|encore|Barnes & Noble
+One X|endeavoru|HTC
+One X+|enrc2b|HTC
+Epic 4G|epicmtd|Samsung
+myTouch 3G Slide|espresso|T-Mobile
+Galaxy Tab 2 7.0 / 10.1 (GSM)|espresso3g|Samsung
+Galaxy Tab 2 7.0 / 10.1 (Wi-Fi)|espressowifi|Samsung
+Robin|ether|Nextbit
+Xoom (GSM)|everest|Motorola
+One XL|evita|HTC
+Galaxy Exhilarate|exhilarate|Samsung
+Galaxy Express (AT&T)|expressatt|Samsung
+G3 (Korea)|f400|LG
+Moto G|falcon|Motorola
+Fascinate|fascinatemtd|Samsung
+Mi 4i|ferrari|Xiaomi
+Find 5|find5|Oppo
+Find 7a|find7|OPPO
+Find 7s|find7s|OPPO
+Droid Incredible 4G LTE|fireball|HTC
+Nexus 7 2013 (Wi-Fi)|flo|Google
+Nexus 9 (Wi-Fi)|flounder|Google
+Nexus 9 (LTE)|flounder_lte|Google
+Nexus Player|fugu|Google
+G2 Mini|g2m|LG
+SnapTo|g620_a2|Huawei
+Galaxy S II (Intl)|galaxys2|Samsung
+Galaxy S II (AT&T)|galaxys2att|Samsung
+Galaxy S (B)|galaxysbmtd|Samsung
+Galaxy S|galaxysmtd|Samsung
+Mi 5|gemini|Xiaomi
+Moto X 2013|ghost|Motorola
+myTouch 4G|glacier|T-Mobile
+Nexus 7 (Wi-Fi)|grouper|Google
+Galaxy Tab S2 9.7 (LTE)|gts210ltexx|Samsung
+Galaxy Tab S2 9.7 (Wi-Fi)|gts210wifi|Samsung
+Xperia Neo V|haida|Sony Ericsson
+Xperia Neo|hallon|Sony Ericsson
+G4 (TMO)|h811|LG
+G4 (Intl)|h815|LG
+V10 (TMO)|h901|LG
+ZUK Z1|ham|Zuk
+Nexus 5|hammerhead|Google
+Nexus 5 (CAF)|hammerheadcaf|Google
+G Tablet|harmony|ViewSonic
+Moto G4 Play|harpia|Motorola
+Xperia TX|hayabusa|Sony
+Galaxy S II (TMO)|hercules|Samsung
+Hero (GSM)|hero|HTC
+Galaxy S7 Edge|hero2lte|Samsung
+Hero (CDMA)|heroc|HTC
+Galaxy S7|herolte|Samsung
+Xperia Arco S|hikari|Sony
+One A9 (GSM International)|hiaeuhl|HTC
+One A9 (GSM US)|hiaeul|HTC
+One M9 (GSM)|himaul|HTC
+One M9 (VZW)|himawl|HTC
+Galaxy Note 3 LTE (N9005/P)|hlte|Samsung
+Galaxy Note 3 (Sprint)|hltespr|Samsung
+Galaxy Note 3 LTE (N900T/V/W8)|hltetmo|Samsung
+Galaxy Note 3 (US-Cellular)|hlteusc|Samsung
+Galaxy note 3 (VZW)|hltevzw|Samsung
+Galaxy Note 3 (Intl)|hltexx|Samsung
+Raider 4G|holiday|HTC
+Xperia Z1|honami|Sony
+Xperia SP|huashan|Sony
+Nook HD|hummingbird|Barnes & Noble
+Mi Max|hydrogen|Xiaomi
+Galaxy Note II (VZW)|i605|Samsung
+Galaxy S II (AT&T)|i777|Samsung
+Galaxy S II (Intl)|i9100|Samsung
+Galaxy S II (G)|i9100g|Samsung
+Galaxy R (GSM)|i9103|Samsung
+Galaxy Note 10.1 (VZW)|i925|Samsung
+Galaxy S III (Intl)|i9300|Samsung
+Galaxy S III (GSM LTE)|i9305|Samsung
+Galaxy S4 (non-LTE)|i9500|Samsung
+Redmi 3/Prime|ido|Xiaomi
+Droid Incredible|inc|HTC
+Xperia Pro|iyokan|Sony Ericsson
+Galaxy S4 Active (Intl)|jactivelte|Samsung
+G3 S|jag3gds|LG
+G3 Beat|jagnm|LG
+Yunique|jalebi|YU
+Kindle Fire HD 8.9|jem|Amazon
+Evo 4G LTE|jewel|HTC
+Galaxy S4|jflte|Samsung
+Galaxy S4 (AT&T)|jflteatt|Samsung
+Galaxy S4 (Canada)|jfltecan|Samsung
+Galaxy S4 (Cricket)|jfltecri|Samsung
+Galaxy S4 (C Spire)|jfltecsp|Samsung
+Galaxy S4 (Sprint)|jfltespr|Samsung
+Galaxy S4 (TMO)|jfltetmo|Samsung
+Galaxy S4 (USC)|jflteusc|Samsung
+Galaxy S4 (VZW)|jfltevzw|Samsung
+Galaxy S4 (Intl)|jfltexx|Samsung
+Defy|jordan|Motorola
+Defy+|jordan_plus|Motorola
+Redmi Note 3|kenzo|Xiaomi
+Vibe Z2 Pro|kingdom|Lenovo
+Storm|kipper|Wileyfox
+Honor 5X|kiwi|Huawei
+Galaxy Tab S 8.4 (LTE)|klimtlte|Samsung
+Galaxy Tab S 8.4 (Wi-Fi)|klimtwifi|Samsung
+Galaxy S5|klte|Samsung
+Galaxy S5 (China)|kltechn|Samsung
+Galaxy S5 Duos (China)|kltechnduo|Samsung
+Galaxy S5 Duos|klteduos|Samsung
+Galaxy S5 (Vodafone)|kltedv|Samsung
+Galaxy S5 (AU)|kltekdi|Samsung
+Galaxy S5 (Korea)|kltekor|Samsung
+Galaxy S5 (Sprint)|kltespr|Samsung
+Galaxy S5 (USC)|klteusc|Samsung
+Galaxy S5 (VZW)|kltevzw|Samsung
+Galaxy S4 LTE-A|ks01lte|Samsung
+G2 (Docomo)(GSM)|l01f|LG
+Galaxy Note II (Sprint)|l900|Samsung
+Legend|legend|HTC
+Yuphoria|lettuce|YU
+Aria|liberty|HTC
+Optimus G (Sprint)|ls970|LG
+G2 (Sprint)|ls980|LG
+G3 (Sprint)|ls990|LG
+Galaxy Note 10.1 2014 (LTE)|lt03lte|Samsung
+Galaxy Note 10.1 2014 (Wi-Fi)|lt03wifi|Samsung
+Moto X Play|lux|Motorola
+One Mini|m4|HTC
+One (GSM)|m7|HTC
+One (AT&T)|m7att|HTC
+One (Sprint)|m7spr|HTC
+One (TMO)|m7tmo|HTC
+One (GSM)|m7ul|HTC
+One (VZW)|m7vzw|HTC
+One 2014|m8|HTC
+One 2014 Dual SIM|m8d|HTC
+Galaxy Nexus (GSM)|maguro|Google
+Nexus 4|mako|Google
+Xperia Mini Pro|mango|Sony Ericsson
+Nexus 10|manta|Google
+Pixel XL|marlin|Google
+Droid 4|maserati|Motorola
+Atrix HD|mb886|Motorola
+One Mini 2|memul|HTC
+Moto G3 Turbo|merlin|Motorola
+Mesmerize|mesmerizemtd|Samsung
+Xperia X10 Mini Pro|mimmi|Sony Ericsson
+Xperia T|mint|Sony
+Galaxy Tab Pro 8.4|mondrianwifi|Samsung
+Cliq|morrison|Motorola
+MSM8960 Base|moto_msm8960|Motorola
+MSM8960 JB Bootloader|moto_msm8960_jbbl|Motorola
+Moto X (Deprecated)|moto_msm8960dt|Motorola
+Backflip|motus|Motorola
+Ascend Mate 2|mt2|Huawei
+N1|n1|Oppo
+N3|n3|OPPO
+Galaxy Note 8 (GSM)|n5100|Samsung
+Galaxy Note 8 (Wi-Fi)|n5110|Samsung
+Galaxy Note 8 (LTE)|n5120|Samsung
+Galaxy Note (Intl)|n7000|Samsung
+Galaxy Note II (GSM Non-LTE)|n7100|Samsung
+Galaxy Note 10.1 (GSM)|n8000|Samsung
+Galaxy Note 10.1 (Wi-Fi)|n8013|Samsung
+Xperia M|nicki|Sony
+Xperia S|nozomi|Sony
+Nubia Z9 Max|nx510j|ZTE
+Droid Ultra/MAXX|obake|Motorola
+Xperia ZL|odin|Sony
+ODROID-U2|odroidu2|Hardkernel
+Atrix 4G|olympus|Motorola
+One|one|Geeksphone
+2|oneplus2|OnePlus
+3 / 3T|oneplus3|OnePlus
+X|onyx|OnePlus
+Moto G (2015)|osprey|Motorola
+Kindle Fire (1st gen)|otter|Amazon
+Moto E (2015)|otus|Motorola
+Kindle Fire (2nd gen)|otter2|Amazon
+Kindle Fire (1Gen custom bl)|otterx|Amazon
+Nook HD+|ovation|Barnes & Noble
+ZenPad 8.0 (Z380KL)|P024|Asus
+Galaxy Tab (GSM)|p1|Samsung
+Galaxy Tab (CDMA)|p1c|Samsung
+Galaxy Tab (P1000L)|p1l|Samsung
+Galaxy Tab (P1000N)|p1n|Samsung
+Galaxy Tab 10.1v|p3|Samsung
+Galaxy Tab 2 7 (GSM)|p3100|Samsung
+Galaxy Tab 2 7 (Wi-Fi)|p3110|Samsung
+Galaxy Tab 2 7 (Wi-Fi+IR)|p3113|Samsung
+Optimus Me|p350|LG
+Galaxy Tab 10.1 (GSM)|p4|Samsung
+Galaxy Tab 10.1 (TMO)|p4tmo|Samsung
+Galaxy Tab 10.1 (VZW)|p4vzw|Samsung
+Galaxy Tab 10.1 (Wi-Fi)|p4wifi|Samsung
+Galaxy Tab 8.9 (GSM)|p5|Samsung
+Optimus One|p500|LG
+Galaxy Tab2 10.1 (GSM)|p5100|Samsung
+Galaxy Tab2 10.1 (Wi-Fi)|p5110|Samsung
+Galaxy Tab 8.9 (Wi-Fi)|p5wifi|Samsung
+Optimus L7|p700|LG
+Optimus 3D Max|p720|LG
+Optimus L9|p760|LG
+Optimus 4X HD|p880|LG
+Optimus 3D|p920|LG
+Thrill 4G|p925|LG
+Nitro HD / Optimus LTE 4G|p930|LG
+Optimus Black|p970|LG
+Optimus 2X|p990|LG
+G2x|p999|T-Mobile
+Aquaris X5|paella|BQ
+Nexus One|passion|Google
+Benefit A3|peach|ARK
+Moto G 4G|peregrine|Motorola
+Galaxy Tab Pro 10.1 (Wi-Fi)|picassowifi|Samsung
+Aquaris M5|piccolo|BQ
+Xperia Tablet Z LTE|pollux|Sony
+Xperia Tablet Z Wi-Fi|pollux_windy|Sony
+Spark|porridge|Wileyfox
+Spark X|porridgek3|Wileyfox
+Sensation|pyramid|HTC
+Moto MAXX|quark|Motorola
+Galaxy Note (AT&T)|quincyatt|Samsung
+Galaxy Note (TMO)|quincytmo|Samsung
+R5/R5s (Intl)|r5|OPPO
+R7 Plus|r7plus|OPPO
+Galaxy Note II (USC)|r950|Samsung
+Andromax Q|rendang|Smartfren
+Xperia X10 Mini|robyn|Sony Ericsson
+Shield Portable|roth|Nvidia
+Amaze 4G|ruby|HTC
+Le 2|s2|LeEco
+Galaxy S III NEO|s3ve3g|Samsung
+Galaxy Fit|s5670|Samsung
+Desire S|saga|HTC
+Pixel|sailfish|Google
+Yutopia|sambar|YU
+Xperia Active|satsuma|Sony Ericsson
+Galaxy S II SC-02C|sc02c|Samsung
+Android One 2nd gen|seed|Google
+Galaxy S4 Mini (3G)|serrano3gxx|Samsung
+Galaxy S4 Mini (LTE)|serranoltexx|Samsung
+Droid X|shadow|Motorola
+Xperia X8|shakira|Sony Ericsson
+Android One 3rd gen|shamrock|Google
+Nexus 6|shamu|Google
+Shield Tablet|shieldtablet|Nvidia
+Droid|sholes|Motorola
+Evo 3D (GSM)|shooteru|HTC
+Showcase|showcasemtd|Samsung
+Xperia Z2|sirius|Sony
+Skate|skate|ZTE
+Galaxy S II Skyrocket|skyrocket|Samsung
+G Tablet|smb_a1002|ViewSonic
+Xperia Mini|smultron|Sony Ericsson
+Droid 3|solana|Motorola
+Evo Shift|speedy|HTC
+Android One|sprout|Google
+Android One (4GB)|sprout4|Google
+Android One (8GB)|sprout8|Google
+Droid Razr|spyder|Motorola
+Nexus Q|steelhead|Google
+Xoom (VZW)|stingray|Motorola
+Optimus LTE (SK Telecom)|su640|LG
+Photon|sunfire|Motorola
+Galaxy Premier|superior|Samsung
+Evo 4G|supersonic|HTC
+Moto E LTE (2015)|surnia|Motorola
+Galaxy Note II (GSM LTE)|t0lte|Samsung
+Galaxy Note II (AT&T)|t0lteatt|Samsung
+Galaxy Note II (TMO)|t0ltetmo|Samsung
+One Max|t6|HTC
+One Max (Sprint)|t6spr|HTC
+One Max (VZW)|t6vzw|HTC
+Galaxy S Blaze 4G|t769|Samsung
+Xperia L|taoshan|Sony
+Droid Bionic|targa|Motorola
+Galaxy Mini|tass|Samsung
+Kindle Fire HD 7|tate|Amazon
+Touchpad|tenderloin|HP
+Eee Pad Transformer|tf101|Asus
+Eee Pad Transformer Prime|tf201|Asus
+Transformer Pad TF300T|tf300t|Asus
+Transformer Pad Infinity|tf700t|Asus
+Transformer Pad TF701T|tf701t|Asus
+Moto G 4G 2014|thea|Motorola
+Kindle Fire HDX 7 (3rd gen)|thor|Amazon
+Nexus 7 (GSM)|tilapia|Google
+Moto G 2014|titan|Motorola
+Xperia Z Ultra|togari|Sony
+Xperia Z Ultra (GPE)|togari_gpe|Sony
+Yureka|tomato|YU
+Galaxy Nexus (VZW)|toro|Google
+Galaxy Nexus (Sprint)|toroplus|Google
+Galaxy Note 4 (Sprint)|trltespr|Samsung
+Galaxy Note 4 (TMO)|trltetmo|Samsung
+Galaxy Note 4 (USC)|trlteusc|Samsung
+Galaxy Note 4 (Intl)|trltexx|Samsung
+Xperia V|tsubasa|Sony
+U8150|u8150|Huawei
+U8160|u8160|Huawei
+U8220|u8220|Huawei
+Razr|umts_spyder|Motorola
+Xperia Ray|urushi|Sony Ericsson
+G Pad 7|v400|LG
+G Pad 7 LTE|v410|LG
+G Pad 8|v480|LG
+G Pad 8.3|v500|LG
+V9|v9|ZTE
+Vega|vega|Advent
+Aquaris E5 4G|vegetalte|BQ
+Vibrant|vibrantmtd|Samsung
+Moto X 2014|victara|Motorola
+One S|ville|HTC
+G2 / HTC Desire Z|vision|T-Mobile
+Droid Incredible S|vivo|HTC
+Droid Incredible 2|vivow|HTC
+Spectrum|vs920|LG
+G2 (VZW)|vs980|LG
+G3 (VZW)|vs985|LG
+Optimus L70|w5|LG
+Optimus L90|w7|LG
+Redmi 2|wt88047|Wingtech
+Xoom (Wi-Fi)|wingray|Motorola
+Moto X 2013 (TMO)|xt1053|Motorola
+Moto X 2013 Developer Edition|xt1060|Motorola
+Photon Q|xt897|Motorola
+Droid RAZR M|xt907|Motorola
+RAZR HD (GSM)|xt925|Motorola
+RAZR HD JB Bootloader|xt925_jbbl|Motorola
+Droid RAZR HD (CDMA)|xt926|Motorola
+Galaxy Player 4|ypg1|Samsung
+Xperia Z|yuga|Sony
+Zenfone 2 (720p)|Z008|Asus
+Zenfone 2 (1080p)|Z00A|Asus
+Zenfone 2 (Z00D)|Z00D|Asus
+Zenfone 2 Laser (720p)|Z00L|Asus
+Zenfone 2 Laser/Selfie (1080p)|Z00T|Asus
+Xperia Z3|z3|Sony
+Xperia Z3 Compact|z3c|Sony
+Xperia Z3 Dual|z3dual|Sony
+Z71|z71|Commtiva
+Cliq XT|zeppelin|Motorola
+Zero|zero|Geeksphone
+Xperia Play (GSM)|zeus|Sony Ericsson
+Xperia Play (CDMA)|zeusc|Sony Ericsson
+GPad 8.3 (Verizon)|vk810|LG
+Axon 7|axon7|ZTE
+Galaxy Tab S2 9.7 2016 (Wi-Fi)|gts210vewifi|Samsung
+Galaxy Tab S2 8.0 2016 (Wi-Fi)|gts28vewifi|Samsung
+G5 (TMO)|h830|LG
+G5 (Intl)|h850|LG
+V20 (TMO)|h918|LG
+Galaxy Note 10.1 2014 (Wi-Fi)|n1awifi|Samsung
+Galaxy Tab Pro 10.1 (Wi-Fi)|n2awifi|Samsung
+10|pme|HTC
+G Pad X 8.0 (TMO)|v521|LG
+Le Max 2|x2|LeEco
+Le Pro 3|zl1|LeEco
+Essential PH-1|mata|Essential
+Vibe K5 / K5 Plus|A6020|Lenovo
+Moto Z Play|addison|Motorola
+Mi 5s|capricorn|Xiaomi
+5|cheeseburger|OnePlus
+Pixel C|dragon|Google
+Fairphone 2|FP2|Fairphone
+Shield Android TV|foster|Nvidia
+Aquaris X5 Plus|gohan|BQ
+Galaxy GRAND Prime (LTE)|gprimelte|Samsung
+Galaxy GRAND Prime (LTE) (Sprint)|gprimeltespr|Samsung
+Galaxy GRAND Prime (LTE)|gprimeltexx|Samsung
+Moto Z|griffin|Motorola
+Galaxy Tab E 9.6 (Wi-Fi)|gtelwifiue|Samsung
+Galaxy Tab E 8.0 (LTE)|gtesqltespr|Samsung
+G6 (EU)|h870|LG
+V20 (AT&T)|h910|LG
+Galaxy Note 3 (International 3G)|ha3g|Samsung
+Xperia Z3+|ivy|Sony
+Galaxy J7 (Sprint)|j7ltespr|Samsung
+Galaxy S5 (International 3G)|k3gxx|Samsung
+Xperia Z4 Tablet LTE|karin|Sony
+Xperia Z4 Tablet WiFi|karin_windy|Sony
+Galaxy S5 Plus|kccat6|Samsung
+Galaxy S5 LTE-A|lentislte|Samsung
+Mi 4c|libra|Xiaomi
+Mi MIX|lithium|Xiaomi
+V20 (Sprint)|ls997|LG
+Galaxy Tab 3 7.0 (Sprint)|lt02ltespr|Samsung
+K10|m216|LG
+Redmi Note 4|mido|Xiaomi
+Mi 5s Plus|natrium|Xiaomi
+Nubia Z9 Max|nx512j|Nubia
+Galaxy S4 Mini (Dual SIM)|serranodsdd|Samsung
+Xperia Z5 Compact|suzuran|Sony
+Galaxy Note II (Korea)|t0ltekor|Samsung
+Aquaris U Plus|tenshi|BQ
+V20 (GSM Unlocked)|us996|LG
+G6 (US)|us997|LG
+Galaxy Note Pro 12.1 (Wi-Fi)|v1awifi|Samsung
+V20 (VZW)|vs995|LG
+Moto Z2 Force|nash|Motorola
+Moto Z2 Force (Sprint)|nash_spr|Motorola
+Moto Z2 Force (T-Mobile)|nash_tmo|Motorola
+Pixel 3a XL|bonito|Google
+Pixel 3a|sargo|Google
