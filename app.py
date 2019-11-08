@@ -39,3 +39,33 @@ def index(device, romtype, incrementalversion):
     z['url'] = r[8]
     zips['response'].append(z)
   return jsonify(zips)
+
+@app.route('/')
+def root():
+  conn = sqlite3.connect(db_filename)
+  c = conn.cursor()
+  c.execute("SELECT DISTINCT device from rom order by device;")
+  devices = c.fetchall()
+  conn.commit()
+  conn.close()
+
+  h = "<html><ul>"
+  for d in devices:
+    h = h + "<li><a href='/" + d[0] + "'>" + d[0] + "</a></li>"
+  h = h + "</ul></html>"
+  return h
+
+@app.route('/<string:device>')
+def device(device):
+  conn = sqlite3.connect(db_filename)
+  c = conn.cursor()
+  c.execute("SELECT filename, url from rom where device = '" + device + "' order by filename;")
+  roms = c.fetchall()
+  conn.commit()
+  conn.close()
+
+  h = "<html><ul>"
+  for r in roms:
+    h = h + "<li><a href='" + r[1] + "'>" + r[0] + "</a></li>"
+  h = h + "</ul></html>"
+  return h
