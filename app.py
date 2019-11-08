@@ -51,7 +51,9 @@ def root():
   conn.commit()
   conn.close()
 
-  h = "<html><ul>"
+  h = "<html>"
+  h = h + "<h1>welcome to invisiblek's lineage updater server</h1>"
+  h = h + "<ul>"
   for d in devices:
     h = h + "<li><a href='/" + d[0] + "'>" + d[0] + "</a> - " + d[1] + " " + d[2] + "</li>"
   h = h + "</ul>"
