@@ -75,7 +75,7 @@ def root():
   h = h + "</td><td>"
   h = h + "<table>"
   for r in recent_roms:
-    h = h + "<tr><td><a href='/" + r[8] + "'>" + r[1] + "</a></td><td>" + datetime.fromtimestamp(r[2]).strftime("%m/%d/%Y, %H:%M:%S") + "</td></tr>"
+    h = h + "<tr><td><a href='" + r[8] + "'>" + r[1] + "</a></td><td>" + datetime.fromtimestamp(r[2]).strftime("%m/%d/%Y, %H:%M:%S") + "</td></tr>"
   h = h + "</table>"
   h = h + "</td></tr><table>"
   h = h + html_footer
