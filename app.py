@@ -72,7 +72,7 @@ def root():
 def device(device):
   conn = sqlite3.connect(db_filename)
   c = conn.cursor()
-  c.execute("SELECT r.filename, r.url, d.name, d.oem, d.model from rom r inner join device d on r.device = d.model where r.device = '" + device + "' order by r.filename;")
+  c.execute("SELECT r.filename, r.url, d.name, d.oem, d.model from rom r inner join device d on r.device = d.model where r.device = '" + device + "' order by r.filename desc;")
   roms = c.fetchall()
   conn.commit()
   conn.close()
