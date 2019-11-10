@@ -1,0 +1,7 @@
+table.main {
+  border-spacing: 55px 3px;
+}
+
+table.main > tbody > tr > td {
+ vertical-align: top;
+}
