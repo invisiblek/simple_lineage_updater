@@ -5,3 +5,7 @@ table.main {
 table.main > tbody > tr > td {
  vertical-align: top;
 }
+
+table.recent, table.roms {
+  border-spacing: 25px 3px;
+}

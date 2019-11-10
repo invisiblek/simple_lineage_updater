@@ -68,14 +68,15 @@ def root():
   h = h + "<table class='main'>"
   h = h + "<tr><th>roms by device</th><th> most recent roms</th></tr>"
   h = h + "<tr><td>"
-  h = h + "<table>"
+  h = h + "<table class='roms'>"
   for d in devices:
     h = h + "<tr><td><a href='/" + d[0] + "'>" + d[0] + "</a></td><td>" + d[1] + " " + d[2] + "</td></tr>"
   h = h + "</table>"
   h = h + "</td><td>"
-  h = h + "<table>"
+  h = h + "<table class='recent'>"
   for r in recent_roms:
-    h = h + "<tr><td><a href='" + r[8] + "'>" + r[1] + "</a></td><td>" + datetime.fromtimestamp(r[2]).strftime("%m/%d/%Y, %H:%M:%S") + "</td></tr>"
+    size = str(round(r[7]/(1024*1024),2)) + "MB"
+    h = h + "<tr><td><a href='" + r[8] + "'>" + r[1] + "</a></td><td>" + size + "</td><td>" + datetime.fromtimestamp(r[2]).strftime("%m/%d/%Y, %H:%M:%S") + "</td></tr>"
   h = h + "</table>"
   h = h + "</td></tr><table>"
   h = h + html_footer
@@ -86,7 +87,7 @@ def root():
 def device(device):
   conn = sqlite3.connect(db_filename)
   c = conn.cursor()
-  c.execute("SELECT r.filename, r.url, d.name, d.oem, d.model from rom r inner join device d on r.device = d.model where r.device = '" + device + "' order by r.filename desc;")
+  c.execute("SELECT r.filename, r.url, d.name, d.oem, d.model, r.romsize, r.datetime from rom r inner join device d on r.device = d.model where r.device = '" + device + "' order by r.filename desc;")
   roms = c.fetchall()
   conn.commit()
   conn.close()
@@ -95,9 +96,10 @@ def device(device):
   h = h + page_header
   if len(roms) > 0:
     h = h + "<h1>" + roms[0][3] + " " + roms[0][2] + " (" + roms[0][4] + ")</h1>"
-  h = h + "<table class='main'>"
+  h = h + "<table class='roms'>"
   for r in roms:
-    h = h + "<tr><td><a href='" + r[1] + "'>" + r[0] + "</a></td></tr>"
+    size = str(round(r[5]/(1024*1024),2)) + "MB"
+    h = h + "<tr><td><a href='" + r[1] + "'>" + r[0] + "</a></td><td>" + size + "</td><td>" + datetime.fromtimestamp(r[6]).strftime("%m/%d/%Y, %H:%M:%S") + "</td></tr>"
   h = h + "</table>"
   h = h + html_footer
   h = h + "</html>"
