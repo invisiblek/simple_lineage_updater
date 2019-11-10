@@ -1,1 +1,10 @@
+# required
 SECRET_KEY = 'some rando string'
+
+## optional config options:
+# source code url, defaults to https://github.com/invisiblek/simple_lineage_updater
+#SOURCE_URL = ''
+
+# page banner
+# page banner string, defaults to "welcome to the updater server"
+#PAGE_BANNER = ''

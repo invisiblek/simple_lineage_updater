@@ -12,7 +12,11 @@ app.secret_key = app.config['SECRET_KEY']
 
 db_filename = "updater.db"
 
-html_footer="<h3>Simple LineageOS Updater Server.<br/>Source <a href='https://github.com/invisiblek/simple_lineage_updater'>here</a>"
+if "SOURCE_URL" in app.config:
+  source_url = app.config['SOURCE_URL']
+else:
+  source_url = "https://github.com/invisiblek/simple_lineage_updater"
+html_footer="<h3>Simple LineageOS Updater Server.<br/>Source <a href='" + source_url + "'>here</a>"
 
 @app.route('/static/<path:path>')
 def send_static(path):
@@ -52,7 +56,10 @@ def root():
   conn.close()
 
   h = "<html>"
-  h = h + "<h1>welcome to invisiblek's lineage updater server</h1>"
+  if "PAGE_BANNER" in app.config:
+    h = h + "<h1>welcome to invisiblek's lineage updater server</h1>"
+  else:
+    h = h + "<h1>welcome to the updater server</h1>"
   h = h + "<ul>"
   for d in devices:
     h = h + "<li><a href='/" + d[0] + "'>" + d[0] + "</a> - " + d[1] + " " + d[2] + "</li>"
