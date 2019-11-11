@@ -5,3 +5,7 @@ This is a simple updater server/service for LineageOS roms (or anything that use
 You'll need `python3` with `flask` and `flask_compress` installed, you're on your own to figure out how to do that or until someone gets the ambition to make this README better.
 
 Consider this project a WIP. Feel free to submit pull requests.
+
+TODO
++ direct migration from a mongo instance
++ better README/destructions
