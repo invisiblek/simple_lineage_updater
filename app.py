@@ -12,13 +12,17 @@ app.secret_key = app.config['SECRET_KEY']
 
 db_filename = "updater.db"
 
-page_header = "<link rel='stylesheet' href='/static/css/updater.css'>"
+constants = {}
 
 if "SOURCE_URL" in app.config:
-  source_url = app.config['SOURCE_URL']
+  constants['source_url'] = app.config['SOURCE_URL']
 else:
-  source_url = "https://github.com/invisiblek/simple_lineage_updater"
-html_footer="<h3>Simple LineageOS Updater Server.<br/>Source <a href='" + source_url + "'>here</a>"
+  constants['source_url'] = "https://github.com/invisiblek/simple_lineage_updater"
+
+if "PAGE_BANNER" in app.config:
+  constants['page_banner'] = app.config['PAGE_BANNER']
+else:
+  constants['page_banner'] = "welcome to the updater server"
 
 @app.route('/static/<path:path>')
 def send_static(path):
@@ -50,57 +54,43 @@ def index(device, romtype, incrementalversion):
 
 @app.route('/')
 def root():
+  devices = {}
+  roms = {}
+
   conn = sqlite3.connect(db_filename)
   c = conn.cursor()
+
   c.execute("SELECT DISTINCT r.device, d.oem, d.name from rom r inner join device d on r.device = d.model order by r.device;")
-  devices = c.fetchall()
-  c.execute("SELECT * from rom r order by r.datetime desc limit 10;")
-  recent_roms = c.fetchall()
+  for row in c.fetchall():
+    devices[row[0]] = { "device": row[0], "oem": row[1], "name": row[2] }
+
+  c.execute("SELECT r.filename, r.datetime, r.romsize, r.url from rom r order by r.datetime desc limit 10;")
+  for row in c.fetchall():
+    roms[row[0]] = { "filename": row[0], "datetime": datetime.fromtimestamp(row[1]).strftime("%m/%d/%Y, %H:%M:%S"), "romsize": str(round(row[2]/(1024*1024),2)) + "MB", "url": row[3] }
+
   conn.commit()
   conn.close()
 
-  h = "<html>"
-  h = h + page_header
-  if "PAGE_BANNER" in app.config:
-    h = h + "<h1>welcome to invisiblek's lineage updater server</h1>"
-  else:
-    h = h + "<h1>welcome to the updater server</h1>"
-  h = h + "<table class='main'>"
-  h = h + "<tr><th>roms by device</th><th> most recent roms</th></tr>"
-  h = h + "<tr><td>"
-  h = h + "<table class='roms'>"
-  for d in devices:
-    h = h + "<tr><td><a href='/" + d[0] + "'>" + d[0] + "</a></td><td>" + d[1] + " " + d[2] + "</td></tr>"
-  h = h + "</table>"
-  h = h + "</td><td>"
-  h = h + "<table class='recent'>"
-  for r in recent_roms:
-    size = str(round(r[7]/(1024*1024),2)) + "MB"
-    h = h + "<tr><td><a href='" + r[8] + "'>" + r[1] + "</a></td><td>" + size + "</td><td>" + datetime.fromtimestamp(r[2]).strftime("%m/%d/%Y, %H:%M:%S") + "</td></tr>"
-  h = h + "</table>"
-  h = h + "</td></tr><table>"
-  h = h + html_footer
-  h = h + "</html>"
-  return h
+  return render_template('index.html', devices=devices, roms=roms, constants=constants)
 
 @app.route('/<string:device>')
 def device(device):
+  d = {}
+  roms = {}
+
   conn = sqlite3.connect(db_filename)
   c = conn.cursor()
-  c.execute("SELECT r.filename, r.url, d.name, d.oem, d.model, r.romsize, r.datetime from rom r inner join device d on r.device = d.model where r.device = '" + device + "' order by r.filename desc;")
-  roms = c.fetchall()
+
+  c.execute("SELECT d.model, d.oem, d.name from device d where d.model = '" + device + "';")
+  for row in c.fetchall():
+    d = { "device": row[0], "oem": row[1], "name": row[2] }
+    break
+
+  c.execute("SELECT r.filename, r.datetime, r.romsize, r.url from rom r where r.device = '" + device + "' order by r.filename desc;")
+  for row in c.fetchall():
+    roms[row[0]] = { "filename": row[0], "datetime": datetime.fromtimestamp(row[1]).strftime("%m/%d/%Y, %H:%M:%S"), "romsize": str(round(row[2]/(1024*1024),2)) + "MB", "url": row[3] }
+
   conn.commit()
   conn.close()
 
-  h = "<html>"
-  h = h + page_header
-  if len(roms) > 0:
-    h = h + "<h1>" + roms[0][3] + " " + roms[0][2] + " (" + roms[0][4] + ")</h1>"
-  h = h + "<table class='roms'>"
-  for r in roms:
-    size = str(round(r[5]/(1024*1024),2)) + "MB"
-    h = h + "<tr><td><a href='" + r[1] + "'>" + r[0] + "</a></td><td>" + size + "</td><td>" + datetime.fromtimestamp(r[6]).strftime("%m/%d/%Y, %H:%M:%S") + "</td></tr>"
-  h = h + "</table>"
-  h = h + html_footer
-  h = h + "</html>"
-  return h
+  return render_template('device.html', device=d, roms=roms, constants=constants)

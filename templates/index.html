@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ constants['page_banner'] }}</h1>
+<table class="main">
+  <tr>
+    <th>roms by device</th>
+    <th> most recent roms</th>
+  </tr>
+  <tr>
+    <td>
+      <table class="roms">
+        {% for d in devices %}
+        <tr>
+          <td><a href="/{{ devices[d]['device'] }}">{{ devices[d]['device'] }}</a></td>
+          <td>{{ devices[d]['oem'] }} {{ devices[d]['name'] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </td>
+    <td>
+      <table class="recent">
+        {% for r in roms %}
+        <tr>
+          <td><a href="{{ roms[r]['url'] }}">{{ roms[r]['filename'] }}</a></td>
+          <td>{{ roms[r]['datetime'] }}</td>
+          <td>{{ roms[r]['romsize'] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </td>
+  </tr>
+</table>
+
+{% endblock %}

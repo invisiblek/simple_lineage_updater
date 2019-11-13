@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ device['oem'] }} {{ device['name'] }} ({{ device['device'] }})</h1>
+  <table class="roms">
+    {% for r in roms %}
+    <tr>
+      <td><a href="{{ roms[r]['url'] }}">{{ roms[r]['filename'] }}</a></td>
+      <td>{{ roms[r]['datetime'] }}</td>
+      <td>{{ roms[r]['romsize'] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</table>
+
+{% endblock %}
