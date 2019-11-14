@@ -27,6 +27,7 @@ if not os.path.isfile(db_filename):
   c = conn.cursor()
   c.execute("CREATE TABLE device(id INTEGER PRIMARY KEY AUTOINCREMENT, model TEXT, oem TEXT, name TEXT);")
   c.execute("CREATE TABLE rom(id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT, datetime INTEGER, device TEXT, version TEXT, romtype TEXT, md5sum TEXT, romsize INTEGER, url TEXT);")
+  c.execute("CREATE TABLE recovery(id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT, datetime INTEGER, device TEXT, md5sum TEXT, url TEXT);")
   conn.commit()
   conn.close()
   devices = True
