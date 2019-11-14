@@ -10,7 +10,7 @@
   <tr>
     <td>
       <table class="roms">
-        {% for d in devices %}
+        {% for d in devices|sort %}
         <tr>
           <td><a href="/{{ devices[d]['device'] }}">{{ devices[d]['device'] }}</a></td>
           <td>{{ devices[d]['oem'] }} {{ devices[d]['name'] }}</td>
@@ -20,7 +20,7 @@
     </td>
     <td>
       <table class="recent">
-        {% for r in roms %}
+        {% for r in roms|sort(reverse=True) %}
         <tr>
           <td><a href="{{ roms[r]['url'] }}">{{ roms[r]['filename'] }}</a></td>
           <td>{{ roms[r]['datetime'] }}</td>
