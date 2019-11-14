@@ -12,5 +12,8 @@
     {% endfor %}
   </table>
 </table>
-
+{% if recovery['url'] %}
+<br/>
+Recovery image for flashing: <a href="{{ recovery['url'] }}">download</a>
+{% endif %}
 {% endblock %}
