@@ -62,7 +62,11 @@ def root():
 
   c.execute("SELECT DISTINCT r.device, d.oem, d.name from rom r inner join device d on r.device = d.model order by r.device;")
   for row in c.fetchall():
-    devices[row[0]] = { "device": row[0], "oem": row[1], "name": row[2] }
+    c.execute("SELECT r.url from rom r where device ='" + row[0] + "' order by r.datetime desc limit 1;")
+    for l in c.fetchall():
+      latest = l[0]
+      break
+    devices[row[0]] = { "device": row[0], "oem": row[1], "name": row[2], "latest": latest }
 
   c.execute("SELECT r.filename, r.datetime, r.romsize, r.url from rom r order by r.datetime desc limit 10;")
   for row in c.fetchall():

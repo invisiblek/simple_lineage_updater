@@ -14,6 +14,7 @@
         <tr>
           <td><a href="/{{ devices[d]['device'] }}">{{ devices[d]['device'] }}</a></td>
           <td>{{ devices[d]['oem'] }} {{ devices[d]['name'] }}</td>
+          <td><a href="{{ devices[d]['latest'] }}">(latest)</td>
         </tr>
         {% endfor %}
       </table>
