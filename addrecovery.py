@@ -14,9 +14,7 @@ else:
     parser = argparse.ArgumentParser()
     parser.add_argument("--filename", required=True)
     parser.add_argument("--device", required=True)
-    parser.add_argument("--md5sum", required=True)
     parser.add_argument("--url", required=True)
-    parser.add_argument("--datetime", required=True)
     args = parser.parse_args()
 
     conn = sqlite3.connect(db_filename)
@@ -24,6 +22,6 @@ else:
     c.execute("DELETE FROM recovery where filename = '{0}';".format(args.filename))
     conn.commit()
 
-    c.execute("INSERT INTO recovery (filename, device, md5sum, url, datetime) VALUES('{0}', '{1}', '{2}', '{3}', '{4}');".format(args.filename, args.device, args.md5sum, args.url, args.datetime))
+    c.execute("INSERT INTO recovery (filename, device, url) VALUES('{0}', '{1}', '{2}');".format(args.filename, args.device, args.url))
     conn.commit()
     conn.close()

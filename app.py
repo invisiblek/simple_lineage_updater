@@ -91,9 +91,9 @@ def device(device):
   for row in c.fetchall():
     roms[row[0]] = { "filename": row[0], "datetime": datetime.fromtimestamp(row[1]).strftime("%m/%d/%Y, %H:%M:%S"), "romsize": str(round(row[2]/(1024*1024),2)) + "MB", "url": row[3] }
 
-  c.execute("SELECT r.filename, r.url from recovery r where r.device = '" + device + "' order by r.datetime desc limit 1;")
+  c.execute("SELECT r.url from recovery r where r.device = '" + device + "' order by r.id desc limit 1;")
   for row in c.fetchall():
-    recovery = { "filename": row[0], "url": row[1] }
+    recovery = { "url": row[0] }
     break
 
   conn.commit()
