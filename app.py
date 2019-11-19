@@ -70,7 +70,7 @@ def root():
 
   c.execute("SELECT r.filename, r.datetime, r.romsize, r.url from rom r order by r.datetime desc limit 10;")
   for row in c.fetchall():
-    roms[row[0]] = { "filename": row[0], "datetime": datetime.fromtimestamp(row[1]).strftime("%m/%d/%Y, %H:%M:%S"), "romsize": str(round(row[2]/(1024*1024),2)) + "MB", "url": row[3] }
+    roms[row[1]] = { "filename": row[0], "datetime": datetime.fromtimestamp(row[1]).strftime("%m/%d/%Y, %H:%M:%S"), "romsize": str(round(row[2]/(1024*1024),2)) + "MB", "url": row[3] }
 
   conn.commit()
   conn.close()
