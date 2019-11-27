@@ -8,3 +8,7 @@ SECRET_KEY = 'some rando string'
 # page banner
 # page banner string, defaults to "welcome to the updater server"
 #PAGE_BANNER = ''
+
+# api key to be used for adding roms via an endpoint. possibly used for other things in the future
+# if omitted, the endpoint will be disabled (return a 403)
+API_KEY = 'some rando string'

@@ -1,9 +1,13 @@
+import addrom
+import json
 import os
 import sqlite3
+import sys
 
 from datetime import datetime
 from flask import Flask, jsonify, request, abort, render_template, send_from_directory
 from flask_compress import Compress
+from functools import wraps
 
 app = Flask(__name__, static_url_path='')
 Compress(app)
@@ -23,6 +27,17 @@ if "PAGE_BANNER" in app.config:
   constants['page_banner'] = app.config['PAGE_BANNER']
 else:
   constants['page_banner'] = "welcome to the updater server"
+
+# Any function decorated with this must include a header that specifies "Apikey: <key>"
+# which matches the app.cfg value for API_KEY
+def api_key_required(f):
+  @wraps(f)
+  def decorated_function(*args, **kwargs):
+    if 'Apikey' in request.headers and "API_KEY" in app.config:
+      if app.config['API_KEY'] == request.headers.get('Apikey'):
+        return f(*args, **kwargs)
+    return abort(403)
+  return decorated_function
 
 @app.route('/static/<path:path>')
 def send_static(path):
@@ -76,6 +91,30 @@ def root():
   conn.close()
 
   return render_template('index.html', devices=devices, roms=roms, constants=constants)
+
+# Json example:
+# {
+#   "device": "bonito",
+#   "filename": "test.zip",
+#   "version": "17.0",
+#   "romtype": "unofficial",
+#   "md5": "1234567",
+#   "url": "http://www.google.com",
+#   "datetime": "1574582999",
+#   "romsize": "12345"
+# }
+@app.route('/addrom', methods=['POST','GET'])
+@api_key_required
+def addnewrom():
+  # we capture GET here so it overrides the dynamic route for devices below
+  if request.method != 'POST':
+    return abort(403)
+  try:
+    j = request.json
+    addrom.add(j['filename'], j['device'], j['version'], j['romtype'], j['md5'], j['romsize'], j['url'], j['datetime'])
+    return "added!"
+  except:
+    return abort(400)
 
 @app.route('/<string:device>')
 def device(device):
