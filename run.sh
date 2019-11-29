@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
-FLASK_APP=app.py flask run $@
+cd app
+FLASK_APP=main.py flask run --host=0.0.0.0
