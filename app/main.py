@@ -9,7 +9,7 @@ from flask import Flask, jsonify, request, abort, render_template, send_from_dir
 from flask_compress import Compress
 from functools import wraps
 
-app = Flask(__name__, static_url_path='')
+app = Flask(__name__, static_url_path='', template_folder='/app/templates/')
 Compress(app)
 app.config.from_pyfile('app.cfg')
 app.secret_key = app.config['SECRET_KEY']
