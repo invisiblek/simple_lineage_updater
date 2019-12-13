@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 #
 
+import delrom
 import argparse
 import os
 import sqlite3
@@ -12,11 +13,9 @@ def add(filename, device, version, romtype, md5, romsize, url, dt):
   if not os.path.isfile(db_filename):
     print(db_filename + " does not exist! Aborting!")
   else:
+      delrom.delete(filename)
       conn = sqlite3.connect(db_filename)
       c = conn.cursor()
-      c.execute("DELETE FROM rom where filename = '{0}';".format(filename))
-      conn.commit()
-
       c.execute("INSERT INTO rom (filename, device, version, romtype, md5sum, romsize, url, datetime) VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}');".format(filename, device, version, romtype, md5, romsize, url, dt))
       conn.commit()
       conn.close()

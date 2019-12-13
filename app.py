@@ -1,4 +1,5 @@
 import addrom
+import delrom
 import json
 import os
 import sqlite3
@@ -113,6 +114,23 @@ def addnewrom():
     j = request.json
     addrom.add(j['filename'], j['device'], j['version'], j['romtype'], j['md5'], j['romsize'], j['url'], j['datetime'])
     return "added!"
+  except:
+    return abort(400)
+
+# Json example:
+# {
+#   "filename": "test.zip"
+# }
+@app.route('/delrom', methods=['POST','GET'])
+@api_key_required
+def deleterom():
+  # we capture GET here so it overrides the dynamic route for devices below
+  if request.method != 'POST':
+    return abort(403)
+  try:
+    j = request.json
+    delrom.delete(j['filename'])
+    return "deleted!"
   except:
     return abort(400)
 
