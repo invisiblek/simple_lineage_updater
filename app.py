@@ -113,7 +113,20 @@ def addnewrom():
   try:
     j = request.json
     addrom.add(j['filename'], j['device'], j['version'], j['romtype'], j['md5'], j['romsize'], j['url'], j['datetime'])
-    return "added!"
+    return "rom added!"
+  except:
+    return abort(400)
+
+@app.route('/addrecovery', methods=['POST','GET'])
+@api_key_required
+def addnewrecovery():
+  # we capture GET here so it overrides the dynamic route for devices below
+  if request.method != 'POST':
+    return abort(403)
+  try:
+    j = request.json
+    addrecovery.add(j['filename'], j['device'], j['url'])
+    return "recovery added!"
   except:
     return abort(400)
 
