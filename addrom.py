@@ -7,18 +7,35 @@ import os
 import sqlite3
 import sys
 
-db_filename = "updater.db"
+from classes import *
+from flask import Flask, current_app
+from flask_sqlalchemy import SQLAlchemy
+from model import *
+from sqlalchemy import *
+
+app = Flask(__name__)
+app.config.from_pyfile('app.cfg')
+app.app_context().push()
+config = current_app.config
+
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + app.config['DB_NAME']
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db.init_app(app)
 
 def add(filename, device, version, romtype, md5, romsize, url, dt):
-  if not os.path.isfile(db_filename):
-    print(db_filename + " does not exist! Aborting!")
-  else:
-      delrom.delete(filename)
-      conn = sqlite3.connect(db_filename)
-      c = conn.cursor()
-      c.execute("INSERT INTO rom (filename, device, version, romtype, md5sum, romsize, url, datetime) VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}');".format(filename, device, version, romtype, md5, romsize, url, dt))
-      conn.commit()
-      conn.close()
+  Rom.query.filter(Rom.filename==filename).delete()
+  db.session.commit()
+
+  r = Rom(filename=filename,
+          device=device,
+          version=version,
+          romtype=romtype,
+          md5sum=md5,
+          romsize=romsize,
+          url=url,
+          datetime=dt)
+  db.session.add(r)
+  db.session.commit()
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()

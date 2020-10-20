@@ -1,5 +1,5 @@
 __pycache__
-updater.db
+*.db
 *.pyc
 app.cfg
 roms.txt

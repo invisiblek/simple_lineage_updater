@@ -12,3 +12,6 @@ SECRET_KEY = 'some rando string'
 # api key to be used for adding roms via an endpoint. possibly used for other things in the future
 # if omitted, the endpoint will be disabled (return a 403)
 API_KEY = 'some rando string'
+
+# name of the sqlite3 database
+DB_NAME = 'updater.db'

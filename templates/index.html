@@ -10,22 +10,22 @@
   <tr>
     <td>
       <table class="roms">
-        {% for d in devices|sort %}
+        {% for d in devices %}
         <tr>
-          <td><a href="/{{ devices[d]['device'] }}">{{ devices[d]['device'] }}</a></td>
-          <td>{{ devices[d]['oem'] }} {{ devices[d]['name'] }}</td>
-          <td><a href="{{ devices[d]['latest'] }}">(latest)</td>
+          <td><a href="/{{ d.model }}">{{ d.model }}</a></td>
+          <td>{{ d.oem }} {{ d.name }}</td>
+          <td><a href="{{ latest[d.model] }}">(latest)</td>
         </tr>
         {% endfor %}
       </table>
     </td>
     <td>
       <table class="recent">
-        {% for r in roms|sort(reverse=True) %}
+        {% for r in roms %}
         <tr>
-          <td><a href="{{ roms[r]['url'] }}">{{ roms[r]['filename'] }}</a></td>
-          <td>{{ roms[r]['datetime'] }}</td>
-          <td>{{ roms[r]['romsize'] }}</td>
+          <td><a href="{{ r.url }}">{{ r.filename }}</a></td>
+          <td>{{ r.datetime|datetimefromtimestamp }} </td>
+          <td>{{ (r.romsize/(1024*1024))|round(2) }} MB</td>
         </tr>
         {% endfor %}
       </table>

@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{ device['oem'] }} {{ device['name'] }} ({{ device['device'] }})</h1>
+<h1>{{ device.oem }} {{ device.name }} ({{ device.model }})</h1>
   <table class="roms">
-    {% for r in roms|sort(reverse=True) %}
+    {% for r in roms %}
     <tr>
-      <td><a href="{{ roms[r]['url'] }}">{{ roms[r]['filename'] }}</a></td>
-      <td>{{ roms[r]['datetime'] }}</td>
-      <td>{{ roms[r]['romsize'] }}</td>
+      <td><a href="{{ r.url }}">{{ r.filename }}</a></td>
+      <td>{{ r.datetime|datetimefromtimestamp }} </td>
+      <td>{{ (r.romsize/(1024*1024))|round(2) }} MB</td>
     </tr>
     {% endfor %}
   </table>
 </table>
-{% if recovery['url'] %}
+{% if recovery.url %}
 <br/>
-Recovery image for flashing: <a href="{{ recovery['url'] }}">download</a>
+Recovery image for flashing: <a href="{{ recovery.url }}">download</a>
 {% endif %}
 {% endblock %}
